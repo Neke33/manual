@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,15 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+
         h1 {
             color: #333;
         }
+
         p {
             color: #666;
         }
+
         pre {
             background-color: #f4f4f4;
             padding: 10px;
@@ -23,30 +27,50 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Comando <code>tail</code> en Linux</h1>
-    <p>El comando <code>tail</code> se utiliza para mostrar las últimas líneas de uno o varios archivos de texto en Linux.</p>
-    
+    <p>El comando <code>tail</code> se utiliza para mostrar las últimas líneas de uno o varios archivos de texto en
+        Linux.</p>
+
     <h2>Sintaxis:</h2>
     <pre><code>tail [OPCIONES] [ARCHIVO]</code></pre>
-    
+
     <h2>Opciones:</h2>
     <ul>
         <li><code>-n, --lines=N</code>: Muestra las últimas N líneas del archivo.</li>
-        <li><code>-f, --follow[={name|descriptor}]</code>: Muestra las últimas líneas del archivo en tiempo real y sigue actualizando la salida mientras se añaden más líneas al archivo.</li>
+        <li><code>-f, --follow[={name|descriptor}]</code>: Muestra las últimas líneas del archivo en tiempo real y sigue
+            actualizando la salida mientras se añaden más líneas al archivo.</li>
     </ul>
-    
+
     <hr>
-    
+
     <h1>Comando <code>head</code> en Linux</h1>
-    <p>El comando <code>head</code> se utiliza para mostrar las primeras líneas de uno o varios archivos de texto en Linux.</p>
-    
+    <p>El comando <code>head</code> se utiliza para mostrar las primeras líneas de uno o varios archivos de texto en
+        Linux.</p>
+
     <h2>Sintaxis:</h2>
     <pre><code>head [OPCIONES] [ARCHIVO]</code></pre>
-    
+
     <h2>Opciones:</h2>
     <ul>
         <li><code>-n, --lines=N</code>: Muestra las primeras N líneas del archivo.</li>
     </ul>
+
+    <h2>Ejemplos:</h2><!--Creado por Jorge Alonso-->
+    <ul>
+        <li><code>head -n 5 documento.txt</code>: Este comando mostrará las primeras 10 líneas del archivo documento.txt
+            en la terminal. Si deseas ver un número específico de líneas, puedes usar la opción -n seguida del número
+            deseado de líneas.</li>
+    </ul>
+    <ul><!--Creado por Christian Merchán-->
+        <li><code>tail -n 5 documento.txt</code>: Este comando mostrará las últimas 5 líneas del archivo
+            <code>documento.txt</code> en la terminal.</li>
+    </ul>
+    <ul><!--Creado por Héctor Aparicio-->
+        <li><code>tail -n 10 registro.txt</code>: Este comando mostrará las últimas 10 líneas del archivo registro.txt.</li>
+        <li><code>head -n 20 poema.txt</code>: Este comando mostrará las primeras 20 líneas del archivo poema.txt.</li>
+    </ul>
 </body>
+
 </html>
